@@ -1,0 +1,27 @@
+{
+  "name": "url-indexer-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cli": "tsx src/cli.ts",
+    "db:migrate": "tsx src/cli.ts migrate",
+    "build": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.3",
+    "fast-xml-parser": "^5.11.2",
+    "google-auth-library": "^11.3.1",
+    "ipaddr.js": "^2.5.0",
+    "parse5": "^8.0.1",
+    "pg": "^8.16.3",
+    "robots-parser": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/pg": "^8.15.5",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
